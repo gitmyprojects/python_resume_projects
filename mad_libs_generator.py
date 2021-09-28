@@ -1,4 +1,4 @@
-import time
+from _datetime import datetime
 
 # main function to run program will take in user input and place them in story that gets printed at the end.
 def main():
@@ -7,6 +7,8 @@ def main():
     Verb = Action
     Noun = Person, Place, or Thing
     ''')
+    now = datetime.now()
+    current_time = now.strftime("%H:%M")
     adj_one = input('Adjective: ')
     adj_two = input('Adjective: ')
     bird = input('Type of bird: ')
@@ -22,7 +24,7 @@ def main():
     verb_ing_two = input("Verb ending in \'ing': ")
     noun_two = input('Noun: ')
     print(f"""
-It was a {adj_one}, cold October day.
+It was a {adj_one}, cold October day. It was {current_time}.
 I woke up to the {adj_two} smell of {bird} roasting in the {room}.
 I {verb_past} down the stairs to see if I could help {verb_one} the dinner.
 My mom said, "See if {rel_name} needs a fresh {noun_one}."
