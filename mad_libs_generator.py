@@ -9,49 +9,51 @@ def main():
     ''')
     now = datetime.now()
     current_time = now.strftime("%H:%M")
+
+
     # While loops will check if user left input blank
     adj_one = input('Adjective: ')
-    while adj_one == '':
-        adj_one = input('Field cannot be left blank. Adjective: ')
+    while adj_one == '' or adj_one.isdigit():
+        adj_one = input('Field cannot be left blank or a number. Adjective: ')
     adj_two = input('Adjective: ')
-    while adj_two == '':
-        adj_two = input('Field cannot be left blank. Adjective: ')
+    while adj_two == '' or adj_two.isdigit():
+        adj_two = input('Field cannot be left blank or a number. Adjective: ')
     bird = input('Type of bird: ')
-    while bird == '':
-        bird = input('Field cannot be left blank. Bird: ')
+    while bird == '' or bird.isdigit():
+        bird = input('Field cannot be left blank or a number. Bird: ')
     room = input('Room in house: ')
-    while room == '':
-        room = input('Field cannot be left blank. Room: ')
+    while room == '' or room.isdigit():
+        room = input('Field cannot be left blank or a number. Room: ')
     verb_past = input('Past tense verb: ')
-    while verb_past == '':
-        verb_past = input('Field cannot be left blank. Past tense verb: ')
+    while verb_past == '' or verb_past.isdigit():
+        verb_past = input('Field cannot be left blank or a number. Past tense verb: ')
     verb_one = input('Verb: ')
-    while verb_one == '':
-        verb_one = input('Field cannot be left blank. Verb: ')
+    while verb_one == '' or verb_one.isdigit():
+        verb_one = input('Field cannot be left blank or a number. Verb: ')
     rel_name = input('Relative\'s name: ')
-    while rel_name == '':
-        rel_name = input('Field cannot be left blank. Relative\'s name: ')
+    while rel_name == '' or rel_name.isdigit():
+        rel_name = input('Field cannot be left blank or a number. Relative\'s name: ')
     noun_one = input('Noun: ')
-    while noun_one == '':
-        noun_one = input('Field cannot be left blank. Noun: ')
+    while noun_one == '' or noun_one.isdigit():
+        noun_one = input('Field cannot be left blank or a number. Noun: ')
     liquid = input('A liquid: ')
-    while liquid == '':
-        liquid = input('Field cannot be left blank. A liquid: ')
+    while liquid == '' or liquid.isdigit():
+        liquid = input('Field cannot be left blank or a number. A liquid: ')
     verb_ing = input("Verb ending in \'ing': ")
-    while verb_ing == '':
-        verb_ing = input('Field cannot be left blank. Verb ending in \'ing: ')
+    while verb_ing == '' or verb_ing.isdigit():
+        verb_ing = input('Field cannot be left blank or a number. Verb ending in \'ing: ')
     body_parts = input('Body part - plural: ')
-    while body_parts == '':
-        body_parts = input('Field cannot be left blank. Body part - plural: ')
+    while body_parts == '' or body_parts.isdigit():
+        body_parts = input('Field cannot be left blank or a number. Body part - plural: ')
     noun_plural = input('Plural noun: ')
-    while noun_plural == '':
-        noun_plural = input('Field cannot be left blank. Plural Noun: ')
+    while noun_plural == '' or noun_plural.isdigit():
+        noun_plural = input('Field cannot be left blank or a number. Plural Noun: ')
     verb_ing_two = input("Verb ending in \'ing': ")
-    while verb_ing == '':
-        verb_ing = input('Field cannot be left blank. Verb ending in \'ing: ')
+    while verb_ing == '' or verb_ing.isdigit():
+        verb_ing = input('Field cannot be left blank or a number. Verb ending in \'ing: ')
     noun_two = input('Noun: ')
-    while noun_two == '':
-        noun_two = input('Field cannot be left blank. Noun: ')
+    while noun_two == '' or noun_two.isdigit():
+        noun_two = input('Field cannot be left blank or a number. Noun: ')
     print(f"""
 It was a {adj_one}, cold October day. It was {current_time}.
 I woke up to the {adj_two} smell of {bird} roasting in the {room}.
