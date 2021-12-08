@@ -10,29 +10,51 @@ def main():
     now = datetime.now()
     current_time = now.strftime("%H:%M")
 
-
-    # While loops will check if user left input blank
     adj_one = input('Adjective: ')
-    while adj_one == '' or adj_one.isdigit():
-        adj_one = input('Field cannot be left blank or a number. Adjective: ')
+    # This will test user input for any numbers
+    adj_one_int_test = any(map(str.isdigit, adj_one))
+
+    # While loops will check user input for blanks for numbers
+    while adj_one == '' or adj_one_int_test == True:
+        adj_one = input('Field cannot be left blank or contain/be a number. Adjective: ')
+        adj_one_int_test = any(map(str.isdigit, adj_one))
+
     adj_two = input('Adjective: ')
-    while adj_two == '' or adj_two.isdigit():
-        adj_two = input('Field cannot be left blank or a number. Adjective: ')
+    adj_two_int_test = any(map(str.isdigit, adj_two))
+    while adj_two == '' or adj_two_int_test == True:
+        adj_two = input('Field cannot be left blank or contain/be a number. Adjective: ')
+        adj_two_int_test = any(map(str.isdigit, adj_two))
+
     bird = input('Type of bird: ')
-    while bird == '' or bird.isdigit():
-        bird = input('Field cannot be left blank or a number. Bird: ')
+    bird_int_test = any(map(str.isdigit, bird))
+    while bird == '' or bird_int_test == True:
+        bird = input('Field cannot be left blank or contain/be a number. Bird: ')
+        bird_int_test = any(map(str.isdigit, bird))
+
     room = input('Room in house: ')
-    while room == '' or room.isdigit():
-        room = input('Field cannot be left blank or a number. Room: ')
+    room_int_test = any(map(str.isdigit, room))
+    while room == '' or room_int_test == True:
+        room = input('Field cannot be left blank or contain/be a number. Room: ')
+        room_int_test = any(map(str.isdigit, room))
+
     verb_past = input('Past tense verb: ')
-    while verb_past == '' or verb_past.isdigit():
-        verb_past = input('Field cannot be left blank or a number. Past tense verb: ')
+    verb_past_int_test = any(map(str.isdigit, verb_past))
+    while verb_past == '' or verb_past_int_test == True:
+        verb_past = input('Field cannot be left blank or contain/be a number. Past tense verb: ')
+        verb_past_int_test = any(map(str.isdigit, verb_past))
+
     verb_one = input('Verb: ')
-    while verb_one == '' or verb_one.isdigit():
-        verb_one = input('Field cannot be left blank or a number. Verb: ')
+    verb_one_int_test = any(map(str.isdigit, verb_one))
+    while verb_one == '' or verb_one_int_test == True:
+        verb_one = input('Field cannot be left blank or be/contain a number. Verb: ')
+        verb_one_int_test = any(map(str.isdigit, verb_one))
+
     rel_name = input('Relative\'s name: ')
-    while rel_name == '' or rel_name.isdigit():
-        rel_name = input('Field cannot be left blank or a number. Relative\'s name: ')
+    rel_name_int_test = any(map(str.isdigit, rel_name))
+    while rel_name == '' or rel_name_int_test == True:
+        rel_name = input('Field cannot be left blank or be/contain a number. Relative\'s name: ')
+        rel_name_int_test = any(map(str.isdigit, rel_name))
+
     noun_one = input('Noun: ')
     while noun_one == '' or noun_one.isdigit():
         noun_one = input('Field cannot be left blank or a number. Noun: ')
